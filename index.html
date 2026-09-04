@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f8fa">
+  <meta name="theme-color" content="#0b0f14">
   <title>Knihovna projektů · MoskitoGrill</title>
   <link rel="stylesheet" href="styles.css">
   <script src="app.js" defer></script>
 </head>
 <body>
   <header class="header">
-    <a class="brand" href="./" aria-label="MoskitoGrill — úvod"><img class="brand-logo" src="assets/moskitogrill-logo.png" alt="" width="36" height="36"><span>MoskitoGrill <span class="brand-divider">/</span> <span class="brand-subtitle">hub</span></span></a>
+    <a class="brand" href="./" aria-label="MoskitoGrill — úvod"><img class="brand-logo" src="assets/moskitogrill-logo.png" alt="" width="36" height="36"><span>MoskitoGrill <span class="brand-divider">/</span> <span class="brand-subtitle">dev_hub</span></span></a>
+    <span class="system-status"><span class="status-dot" aria-hidden="true"></span>system online</span>
     <a class="github" href="https://github.com/MoskitoGrill" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03A9.6 9.6 0 0 1 12 6.84c.85 0 1.7.11 2.5.33 1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg><span>Můj GitHub</span><span aria-hidden="true">↗</span></a>
   </header>
   <main>
     <section aria-labelledby="library-title">
       <div class="toolbar">
-        <div class="library-heading"><h2 id="library-title">Knihovna</h2><span id="count" class="count">3</span></div>
+        <div class="library-heading"><span class="prompt" aria-hidden="true">~/projects $</span><h2 id="library-title">ls</h2><span id="count" class="count">3</span></div>
         <div class="controls">
           <label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><input type="search" id="search" placeholder="Najít projekt…" aria-label="Najít projekt"></label>
           <div class="view-toggle" role="group" aria-label="Zobrazení knihovny">
@@ -26,19 +27,19 @@
         </div>
       </div>
       <div class="projects" id="projects" data-view="list">
-        <a class="project" href="https://moskitogrill.github.io/WorkTime/" target="_blank" rel="noopener noreferrer" data-name="Pracovní čas WorkTime" data-description="Přehled pracovní doby, odchodů a měsíčního salda.">
+        <a class="project" href="https://moskitogrill.github.io/WorkTime/" target="_blank" rel="noopener noreferrer" data-index="01" data-name="Pracovní čas WorkTime" data-description="Přehled pracovní doby, odchodů a měsíčního salda.">
           <div class="preview"><iframe src="https://moskitogrill.github.io/WorkTime/" title="Náhled projektu Pracovní čas" loading="lazy" tabindex="-1"></iframe></div>
           <div class="project-info"><div class="project-topline"><p class="project-meta">GITHUB PAGES</p><span class="device" title="Určeno pro mobil"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M10 5h4M11 19h2"/></svg><span>Mobil</span></span></div><h3>Pracovní čas</h3><p class="description">Přehled pracovní doby, plánovaných odchodů a měsíčního salda.</p><span class="preview-label">WorkTime</span></div>
           <span class="project-arrow" aria-hidden="true">↗</span>
         </a>
-        <a class="project" href="https://moskitogrill.github.io/ksp-deltaV/" target="_blank" rel="noopener noreferrer" data-name="KSP Mission Planner deltaV" data-description="Interaktivní plánovač meziplanetárních misí pro Kerbal Space Program.">
+        <a class="project" href="https://moskitogrill.github.io/ksp-deltaV/" target="_blank" rel="noopener noreferrer" data-index="02" data-name="KSP Mission Planner deltaV" data-description="Interaktivní plánovač meziplanetárních misí pro Kerbal Space Program.">
           <div class="preview"><iframe src="https://moskitogrill.github.io/ksp-deltaV/" title="Náhled projektu KSP Mission Planner" loading="lazy" tabindex="-1"></iframe></div>
           <div class="project-info"><div class="project-topline"><p class="project-meta">GITHUB PAGES</p><span class="device" title="Určeno pro počítač"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span>Počítač</span></span></div><h3>KSP Mission Planner</h3><p class="description">Plánovač vhodných oken pro Kerbal Space Program.</p><span class="preview-label">ksp-deltaV</span></div>
           <span class="project-arrow" aria-hidden="true">↗</span>
         </a>
-        <a class="project" href="https://moskitogrill.github.io/regionalka_spk_restaurace/" target="_blank" rel="noopener noreferrer" data-name="Restaurace v Šumperku Regionálka" data-description="Průvodce restauracemi v Šumperku s filtry, popisy a mapami.">
+        <a class="project" href="https://moskitogrill.github.io/regionalka_spk_restaurace/" target="_blank" rel="noopener noreferrer" data-index="03" data-name="Restaurace v Šumperku Regionálka" data-description="Průvodce restauracemi v Šumperku s filtry, popisy a mapami.">
           <div class="preview"><iframe src="https://moskitogrill.github.io/regionalka_spk_restaurace/" title="Náhled projektu Restaurace v Šumperku" loading="lazy" tabindex="-1"></iframe></div>
-          <div class="project-info"><div class="project-topline"><p class="project-meta">GITHUB PAGES</p><span class="device device-both" title="Primárně pro mobil, funguje i na počítači"><svg class="primary-device" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M10 5h4M11 19h2"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span>Mobil + počítač</span></span></div><h3>Web pro regionálku u nás s Restauracemi v okolí</p><span class="preview-label">Regionálka SPK</span></div>
+          <div class="project-info"><div class="project-topline"><p class="project-meta">GITHUB PAGES</p><span class="device device-both" title="Primárně pro mobil, funguje i na počítači"><svg class="primary-device" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M10 5h4M11 19h2"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span>Mobil + počítač</span></span></div><h3>Web pro regionálku u nás s restauracemi v okolí</h3><p class="description">Průvodce restauracemi v Šumperku s filtry, popisy a mapami.</p><span class="preview-label">Regionálka SPK</span></div>
           <span class="project-arrow" aria-hidden="true">↗</span>
         </a>
       </div>
@@ -46,6 +47,6 @@
       <p class="result-status" id="result-status" role="status" aria-live="polite"></p>
     </section>
   </main>
-  <footer><span>MoskitoGrill <span class="footer-dot">·</span> Personal hub</span><span></span></footer>
+  <footer><span><span class="footer-prompt">//</span> MoskitoGrill <span class="footer-dot">·</span> personal projects</span><span>built on GitHub Pages</span></footer>
 </body>
 </html>
